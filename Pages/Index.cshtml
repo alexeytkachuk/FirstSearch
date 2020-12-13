@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    
+    <form asp-controller="Movies" asp-action="Index">
+        <p>
+            <input type="text" name="SearchString">
+            <input type="submit" value="Search Products" />
+        </p>
+    </form>
+</div>
